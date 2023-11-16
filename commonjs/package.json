@@ -1,0 +1,15 @@
+{
+  "name": "node2023w46",
+  "version": "1.0.0",
+  "description": "Formation NodeJS 2023 semaine 46 version CommonJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ToNo",
+  "license": "MIT",
+  "imports": {
+    "#useless": "./module/extension/useless.js",
+    "#utils": "./module/extension/utils.js"
+  }
+}

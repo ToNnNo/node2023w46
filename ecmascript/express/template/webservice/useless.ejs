@@ -1,0 +1,9 @@
+<h2><%= message %></h2>
+
+<ul>
+    <% for(user of users){ %> 
+        <li>
+            <%= user.firstname %> <%= user.lastname %> <small><%= user.email %></small>
+        </li>
+    <% } %>
+</ul>

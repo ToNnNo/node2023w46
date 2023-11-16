@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webservice</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const url = "/webservice/useless"
+            const response = await fetch(url);
+            if(response.ok) {
+                const message = await response.text();
+                document.querySelector("#target").innerHTML = message;
+            } else {
+                alert('Erreur lors du chargement des données');
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Webservice</h1>
+    <p>
+        Dans cette page nous faisons appelle à notre webservice qui se trouve à l'adresse 
+        "/webservice/useless".
+    </p>
+
+    <div id="target">Données en cours de chargement ...</div>
+
+</body>
+</html>
